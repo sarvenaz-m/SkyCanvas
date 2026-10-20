@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "executedAt": "2026-10-20T10:57:18.309Z",
+  "browser": "134.0.6998.35",
+  "checkCount": 6,
+  "checks": [
+    "clear daylight animates water and sunlight without changing the forecast",
+    "day and night keep the SVG mounted and pass through an intermediate palette",
+    "night stars twinkle while the scene retains a descriptive label",
+    "Gentle motion off freezes the complete scene and makes daylight changes immediate",
+    "scene controls leave recorded weather values intact",
+    "system reduced motion disables every decorative layer and the day/night transition"
+  ],
+  "scope": "Actual visible browser animation; native checks are recorded separately."
+}

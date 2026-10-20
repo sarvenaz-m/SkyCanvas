@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "environment": "JDK 17; Robolectric API 35 with native graphics; renderer tests draw production layers to bitmaps",
+  "totalTests": 41,
+  "suites": [
+    {
+      "name": "dev.sarvenaz.skycanvas.NativeJourneyTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-20T11:09:54.764Z"
+    },
+    {
+      "name": "dev.sarvenaz.skycanvas.SceneMotionTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-20T11:09:49.922Z"
+    },
+    {
+      "name": "dev.sarvenaz.skycanvas.data.HttpApiTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-20T11:02:07.116Z"
+    },
+    {
+      "name": "dev.sarvenaz.skycanvas.data.RepositoryTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-20T11:02:10.986Z"
+    },
+    {
+      "name": "dev.sarvenaz.skycanvas.data.RoomStoreTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-20T11:02:11.161Z"
+    },
+    {
+      "name": "dev.sarvenaz.skycanvas.weather.WeatherTest",
+      "tests": "15",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-20T10:59:54.144Z"
+    }
+  ]
+}

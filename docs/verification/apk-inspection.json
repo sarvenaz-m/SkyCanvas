@@ -1,0 +1,95 @@
+{
+  "version": "1.0.0",
+  "variant": "preview",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "debuggable": false,
+  "sha256": "3892a43092a7492134de1be498735c472a17620caad2b7e035e3c7a8ee0ef61a",
+  "bytes": 1632912,
+  "badging": [
+    "package: name='dev.sarvenaz.skycanvas' versionCode='1' versionName='1.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "uses-permission: name='android.permission.INTERNET'",
+    "uses-permission: name='dev.sarvenaz.skycanvas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'"
+  ],
+  "signatureVerification": [
+    "Verifies",
+    "Verified using v1 scheme (JAR signing): false",
+    "Verified using v2 scheme (APK Signature Scheme v2): true",
+    "Verified using v3 scheme (APK Signature Scheme v3): false",
+    "Verified using v3.1 scheme (APK Signature Scheme v3.1): false",
+    "Verified using v4 scheme (APK Signature Scheme v4): false",
+    "Signer #1 certificate DN: C=US, O=Android, CN=Android Debug"
+  ],
+  "signing": "Development certificate; not a store release signature",
+  "zipAlignment": "Verified: 16 KiB native library alignment and 4-byte file alignment",
+  "nativeLibraries": [
+    {
+      "path": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "loadSegmentAlignments": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "path": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "loadSegmentAlignments": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "path": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "loadSegmentAlignments": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "path": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+      "loadSegmentAlignments": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "path": "lib/x86/libandroidx.graphics.path.so",
+      "loadSegmentAlignments": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "path": "lib/x86/libdatastore_shared_counter.so",
+      "loadSegmentAlignments": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "path": "lib/x86_64/libandroidx.graphics.path.so",
+      "loadSegmentAlignments": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "path": "lib/x86_64/libdatastore_shared_counter.so",
+      "loadSegmentAlignments": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    }
+  ]
+}

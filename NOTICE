@@ -1,0 +1,28 @@
+SkyCanvas Android 1.0.0
+Copyright 2026 Sarvenaz Mahmoudzadeh
+
+Original project code and scene artwork are covered by the MIT licence.
+
+Weather data by Open-Meteo
+https://open-meteo.com/
+Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+The repository retains the original public API responses. Unit conversion,
+chart rendering, rounding and presentation are performed by SkyCanvas.
+Source URLs, retrieval times and SHA-256 hashes: data/provenance.json.
+The API service has separate terms: https://open-meteo.com/en/terms.
+
+Manrope font
+Copyright 2018 The Manrope Project Authors
+SIL Open Font License 1.1; full notice: docs/licenses/Manrope-OFL.txt.
+Android assets contain static instances of the bundled variable font.
+
+Android dependencies include Jetpack Compose, Activity, Lifecycle, Room,
+DataStore, Kotlin, Kotlinx Coroutines, Kotlinx Serialization and OkHttp.
+Their respective licences and embedded notices remain with those components.
+AndroidX, Kotlin, Kotlinx and OkHttp use Apache License 2.0.
+https://www.apache.org/licenses/LICENSE-2.0
+
+Test tooling is separate from the application: JUnit, Robolectric,
+MockWebServer, Playwright and axe-core. Dependency versions are pinned in
+the Gradle build files and package-lock.json.

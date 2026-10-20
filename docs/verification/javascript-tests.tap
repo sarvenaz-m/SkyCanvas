@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: all four public forecasts match their requested place
+ok 1 - all four public forecasts match their requested place
+  ---
+  duration_ms: 20.285021
+  type: 'test'
+  ...
+# Subtest: recorded current values are decoded without invented readings
+ok 2 - recorded current values are decoded without invented readings
+  ---
+  duration_ms: 1.112858
+  type: 'test'
+  ...
+# Subtest: Tehran half-hour offset is independent of browser timezone
+ok 3 - Tehran half-hour offset is independent of browser timezone
+  ---
+  duration_ms: 0.769972
+  type: 'test'
+  ...
+# Subtest: upcoming hours begin at the current model time
+ok 4 - upcoming hours begin at the current model time
+  ---
+  duration_ms: 1.940546
+  type: 'test'
+  ...
+# Subtest: day selection follows local dates
+ok 5 - day selection follows local dates
+  ---
+  duration_ms: 142.299597
+  type: 'test'
+  ...
+# Subtest: null temperatures stay unavailable
+ok 6 - null temperatures stay unavailable
+  ---
+  duration_ms: 11.255153
+  type: 'test'
+  ...
+# Subtest: unexpected units are rejected
+ok 7 - unexpected units are rejected
+  ---
+  duration_ms: 0.810292
+  type: 'test'
+  ...
+# Subtest: a different grid is rejected
+ok 8 - a different grid is rejected
+  ---
+  duration_ms: 0.196967
+  type: 'test'
+  ...
+# Subtest: mismatched columns are rejected
+ok 9 - mismatched columns are rejected
+  ---
+  duration_ms: 0.278801
+  type: 'test'
+  ...
+# Subtest: duplicate timestamps are rejected
+ok 10 - duplicate timestamps are rejected
+  ---
+  duration_ms: 0.596169
+  type: 'test'
+  ...
+# Subtest: invalid precipitation probability is rejected
+ok 11 - invalid precipitation probability is rejected
+  ---
+  duration_ms: 0.266021
+  type: 'test'
+  ...
+# Subtest: negative rain is rejected
+ok 12 - negative rain is rejected
+  ---
+  duration_ms: 0.231449
+  type: 'test'
+  ...
+# Subtest: reversed daily ranges are rejected
+ok 13 - reversed daily ranges are rejected
+  ---
+  duration_ms: 0.259632
+  type: 'test'
+  ...
+# Subtest: WMO groups include freezing precipitation and heavy thunderstorms
+ok 14 - WMO groups include freezing precipitation and heavy thunderstorms
+  ---
+  duration_ms: 0.24518
+  type: 'test'
+  ...
+# Subtest: unit conversion leaves source data untouched
+ok 15 - unit conversion leaves source data untouched
+  ---
+  duration_ms: 1.626453
+  type: 'test'
+  ...
+# Subtest: frame report uses measured samples and nearest-rank percentiles
+ok 16 - frame report uses measured samples and nearest-rank percentiles
+  ---
+  duration_ms: 0.210608
+  type: 'test'
+  ...
+# Subtest: API request fixes units and uses epoch timestamps
+ok 17 - API request fixes units and uses epoch timestamps
+  ---
+  duration_ms: 0.331119
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 287.79895

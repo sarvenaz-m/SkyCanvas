@@ -1,0 +1,17 @@
+{
+  "name": "skycanvas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:demo": "node scripts/build-demo.mjs",
+    "test": "node --test demo/tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test:motion": "node tests/motion.mjs",
+    "capture:motion": "node scripts/capture-motion.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
+    "playwright": "1.51.1"
+  }
+}

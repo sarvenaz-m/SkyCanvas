@@ -1,0 +1,109 @@
+{
+  "version": "1.0.0",
+  "executedAt": "2026-10-20T10:56:16.117Z",
+  "browser": "Chromium 134 / Playwright 1.51.1",
+  "checkCount": 35,
+  "checks": [
+    "real public Isfahan snapshot opens without a runtime API request",
+    "IndexedDB stores the actual payload with its original receive time",
+    "hour slider supports repeated keyboard selection without losing focus",
+    "precipitation amount keeps its mm axis separate from percentage chance",
+    "daily selection retains 24 hours in the place timezone",
+    "place switching opens its own recorded forecast",
+    "scene studies change artwork independently of weather data",
+    "Fahrenheit preference survives reload without altering Celsius source data",
+    "motion preference is persisted and can stop decorative animation",
+    "successful API refresh commits payload and timestamp and survives reload",
+    "offline refresh keeps the exact last successful payload and receive time",
+    "malformed API responses cannot replace the saved forecast",
+    "Retry-After prevents another request during the server cooldown",
+    "a cancelled late response cannot overwrite the selected place",
+    "1440px Today layout and accessibility",
+    "1440px Forecast layout and accessibility",
+    "1440px Places layout and accessibility",
+    "1440px Studio layout and accessibility",
+    "768px Today layout and accessibility",
+    "768px Forecast layout and accessibility",
+    "768px Places layout and accessibility",
+    "768px Studio layout and accessibility",
+    "390px Today layout and accessibility",
+    "390px Forecast layout and accessibility",
+    "390px Places layout and accessibility",
+    "390px Studio layout and accessibility",
+    "320px Today layout and accessibility",
+    "320px Forecast layout and accessibility",
+    "320px Places layout and accessibility",
+    "320px Studio layout and accessibility",
+    "browser frame pacing is measured and exported from 240 real rAF intervals",
+    "unavailable storage leaves the recorded forecast usable with a clear message",
+    "system reduced-motion preference takes priority",
+    "standalone HTML opens without a network connection",
+    "no page errors or external fonts and runtime dependencies"
+  ],
+  "audits": [
+    {
+      "name": "1440px Today",
+      "violations": []
+    },
+    {
+      "name": "1440px Forecast",
+      "violations": []
+    },
+    {
+      "name": "1440px Places",
+      "violations": []
+    },
+    {
+      "name": "1440px Studio",
+      "violations": []
+    },
+    {
+      "name": "768px Today",
+      "violations": []
+    },
+    {
+      "name": "768px Forecast",
+      "violations": []
+    },
+    {
+      "name": "768px Places",
+      "violations": []
+    },
+    {
+      "name": "768px Studio",
+      "violations": []
+    },
+    {
+      "name": "390px Today",
+      "violations": []
+    },
+    {
+      "name": "390px Forecast",
+      "violations": []
+    },
+    {
+      "name": "390px Places",
+      "violations": []
+    },
+    {
+      "name": "390px Studio",
+      "violations": []
+    },
+    {
+      "name": "320px Today",
+      "violations": []
+    },
+    {
+      "name": "320px Forecast",
+      "violations": []
+    },
+    {
+      "name": "320px Places",
+      "violations": []
+    },
+    {
+      "name": "320px Studio",
+      "violations": []
+    }
+  ]
+}

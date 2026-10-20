@@ -1,0 +1,41 @@
+{
+  "source": "Open-Meteo Forecast API",
+  "snapshots": [
+    {
+      "placeId": "isfahan",
+      "retrievedAt": "2026-10-19T12:42:43.276400+00:00",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=32.6546&longitude=51.668&timezone=Asia%2FTehran&current=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cis_day%2Cprecipitation%2Cweather_code%2Ccloud_cover%2Cwind_speed_10m&hourly=temperature_2m%2Cprecipitation_probability%2Cprecipitation%2Cweather_code%2Cis_day&daily=weather_code%2Ctemperature_2m_max%2Ctemperature_2m_min%2Csunrise%2Csunset%2Cprecipitation_sum%2Cprecipitation_probability_max&timeformat=unixtime&forecast_days=7&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm",
+      "sha256": "3e92f735566b6a8c48644f1054f7297ff4e6eace3564ab1651c6f35de5542688",
+      "license": "CC BY 4.0",
+      "attribution": "Weather data by Open-Meteo",
+      "purpose": "Recorded model forecast for offline exploration; not a live reading"
+    },
+    {
+      "placeId": "shiraz",
+      "retrievedAt": "2026-10-19T12:42:43.261218+00:00",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=29.5918&longitude=52.5837&timezone=Asia%2FTehran&current=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cis_day%2Cprecipitation%2Cweather_code%2Ccloud_cover%2Cwind_speed_10m&hourly=temperature_2m%2Cprecipitation_probability%2Cprecipitation%2Cweather_code%2Cis_day&daily=weather_code%2Ctemperature_2m_max%2Ctemperature_2m_min%2Csunrise%2Csunset%2Cprecipitation_sum%2Cprecipitation_probability_max&timeformat=unixtime&forecast_days=7&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm",
+      "sha256": "c0a8261a0e77f18bd059a9519385c48198cf9856534750734c1407e30d20b4dd",
+      "license": "CC BY 4.0",
+      "attribution": "Weather data by Open-Meteo",
+      "purpose": "Recorded model forecast for offline exploration; not a live reading"
+    },
+    {
+      "placeId": "tehran",
+      "retrievedAt": "2026-10-19T12:42:43.115009+00:00",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=35.6892&longitude=51.389&timezone=Asia%2FTehran&current=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cis_day%2Cprecipitation%2Cweather_code%2Ccloud_cover%2Cwind_speed_10m&hourly=temperature_2m%2Cprecipitation_probability%2Cprecipitation%2Cweather_code%2Cis_day&daily=weather_code%2Ctemperature_2m_max%2Ctemperature_2m_min%2Csunrise%2Csunset%2Cprecipitation_sum%2Cprecipitation_probability_max&timeformat=unixtime&forecast_days=7&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm",
+      "sha256": "ef33b9ec0cfeb9f138b300bcd01ce01b1a7f713fd5889f7e02ef1bc132d67dc9",
+      "license": "CC BY 4.0",
+      "attribution": "Weather data by Open-Meteo",
+      "purpose": "Recorded model forecast for offline exploration; not a live reading"
+    },
+    {
+      "placeId": "tabriz",
+      "retrievedAt": "2026-10-19T12:42:43.156653+00:00",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=38.08&longitude=46.2919&timezone=Asia%2FTehran&current=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cis_day%2Cprecipitation%2Cweather_code%2Ccloud_cover%2Cwind_speed_10m&hourly=temperature_2m%2Cprecipitation_probability%2Cprecipitation%2Cweather_code%2Cis_day&daily=weather_code%2Ctemperature_2m_max%2Ctemperature_2m_min%2Csunrise%2Csunset%2Cprecipitation_sum%2Cprecipitation_probability_max&timeformat=unixtime&forecast_days=7&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm",
+      "sha256": "8b6d6f33667b57ac738b20b9a5c56b9e50965441733426e19be4c0344bd8c449",
+      "license": "CC BY 4.0",
+      "attribution": "Weather data by Open-Meteo",
+      "purpose": "Recorded model forecast for offline exploration; not a live reading"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "isfahan",
+    "name": "Isfahan",
+    "country": "Iran",
+    "latitude": 32.6546,
+    "longitude": 51.668,
+    "timezone": "Asia/Tehran"
+  },
+  {
+    "id": "shiraz",
+    "name": "Shiraz",
+    "country": "Iran",
+    "latitude": 29.5918,
+    "longitude": 52.5837,
+    "timezone": "Asia/Tehran"
+  },
+  {
+    "id": "tehran",
+    "name": "Tehran",
+    "country": "Iran",
+    "latitude": 35.6892,
+    "longitude": 51.389,
+    "timezone": "Asia/Tehran"
+  },
+  {
+    "id": "tabriz",
+    "name": "Tabriz",
+    "country": "Iran",
+    "latitude": 38.08,
+    "longitude": 46.2919,
+    "timezone": "Asia/Tehran"
+  }
+]
