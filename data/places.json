@@ -30,5 +30,21 @@
     "latitude": 38.08,
     "longitude": 46.2919,
     "timezone": "Asia/Tehran"
+  },
+  {
+    "id": "mashhad",
+    "name": "Mashhad",
+    "country": "Iran",
+    "latitude": 36.2605,
+    "longitude": 59.6168,
+    "timezone": "Asia/Tehran"
+  },
+  {
+    "id": "bandar-abbas",
+    "name": "Bandar Abbas",
+    "country": "Iran",
+    "latitude": 27.1832,
+    "longitude": 56.2666,
+    "timezone": "Asia/Tehran"
   }
 ]

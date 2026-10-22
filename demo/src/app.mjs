@@ -11,7 +11,7 @@ import {
   forecastUrl,
   frameReport,
 } from "./model.mjs";
-import { sceneSvg, setSceneDaylight } from "./scene.mjs";
+import { sceneSvg, setSceneDaylight, cityScene } from "./scene.mjs";
 
 const bundle = JSON.parse(document.getElementById("forecast-data").textContent);
 const app = document.getElementById("app");
@@ -41,6 +41,7 @@ const state = {
   focus: null,
   chart: "temperature",
   scene: "clear",
+  studioPlace: preferences.place,
   daylight: true,
   fahrenheit: preferences.fahrenheit === true,
   motion: preferences.motion !== false,
@@ -124,6 +125,7 @@ async function selectPlace(id) {
   request?.abort();
   request = null;
   state.place = place;
+  state.studioPlace = place.id;
   state.day = null;
   state.focus = null;
   state.refreshing = false;
@@ -300,7 +302,7 @@ function nav() {
 const brand = () =>
   '<div class="brandmark">SC</div><div><b>SkyCanvas</b><span>AN ILLUSTRATED DAY</span></div>';
 const footer = () =>
-  `<footer><span>Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a><br>Model forecasts · local times in Asia/Tehran.</span><span>SkyCanvas 1.0.0<br>Independent software and original scene artwork.</span></footer>`;
+  `<footer><span>Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a><br>Model forecasts · local times in Asia/Tehran.</span><span>SkyCanvas 2.0.0<br>Independent software and original scene artwork.</span></footer>`;
 function heading(eyebrow, title, detail) {
   return `<div class="page-heading"><div><p class="eyebrow">${eyebrow}</p><h1 tabindex="-1">${title}</h1><p>${detail}</p></div></div>`;
 }
@@ -314,7 +316,7 @@ function stamp(record) {
 function hero() {
   const f = forecast(),
     c = f.current;
-  return `<div class="hero ${c.isDay === false ? "night" : ""}">${sceneSvg(condition(c.code).scene, c.isDay !== false, "hero-sky")}<div class="hero-content"><h2>${state.place.name}</h2><div class="hero-date">IRAN · ${time(c.time, state.place.zone, { weekday: "short", day: "numeric", month: "short" }).toUpperCase()}</div><div class="temperature">${temp(c.temperature, state.fahrenheit)}<sup>${state.fahrenheit ? "F" : "C"}</sup></div><div class="hero-condition">${condition(c.code).label}</div><div class="hero-meta">MODEL CONDITIONS · ${time(c.time, state.place.zone)}</div></div><div class="hero-source">AN ILLUSTRATED VIEW</div></div>`;
+  return `<div class="hero ${c.isDay === false ? "night" : ""}">${sceneSvg(condition(c.code).scene, c.isDay !== false, "hero-sky", state.place.id)}<div class="hero-content"><h2>${state.place.name}</h2><div class="hero-date">IRAN · ${time(c.time, state.place.zone, { weekday: "short", day: "numeric", month: "short" }).toUpperCase()}</div><div class="temperature">${temp(c.temperature, state.fahrenheit)}<sup>${state.fahrenheit ? "F" : "C"}</sup></div><div class="hero-condition">${condition(c.code).label}</div><div class="hero-meta">MODEL CONDITIONS · ${time(c.time, state.place.zone)}</div></div><div class="hero-source">AN ILLUSTRATED VIEW</div></div>`;
 }
 function metric(label, value, unit = "", className = "") {
   return `<div class="metric ${className}"><span class="label">${label}</span><b>${value}${unit ? ` <small>${unit}</small>` : ""}</b></div>`;
@@ -462,14 +464,14 @@ function placesPage() {
     heading(
       "A FEW PLACES TO KEEP CLOSE",
       "Where is your sky?",
-      "Four Iranian cities, with their local time kept intact.",
+      "Six Iranian cities. Six different ways to watch the sky.",
     ) +
     `<div class="place-grid">${places
       .map((p) => {
         const r = state.records[p.id] || bundle.snapshots[p.id],
           f = decode(r.payload, p),
           c = f.current;
-        return `<button class="place-card ${c.isDay === false ? "night" : ""}" data-action="place" data-value="${p.id}" aria-label="Open ${p.name} forecast">${sceneSvg(condition(c.code).scene, c.isDay !== false, "place-" + p.id)}<div class="hero-content" style="color:${c.isDay === false ? "#fff" : "#183754"}"><b>${p.name}</b><span class="temp">${temp(c.temperature, state.fahrenheit)}</span>${stamp(r)}</div></button>`;
+        return `<button class="place-card ${c.isDay === false ? "night" : ""}" data-action="place" data-value="${p.id}" aria-label="Open ${p.name} forecast">${sceneSvg(condition(c.code).scene, c.isDay !== false, "place-" + p.id, p.id)}<div class="hero-content" style="color:${c.isDay === false ? "#fff" : "#183754"}"><b>${p.name}</b><span class="temp">${temp(c.temperature, state.fahrenheit)}</span>${stamp(r)}</div></button>`;
       })
       .join(
         "",
@@ -483,13 +485,13 @@ function studioPage() {
       "A different kind of forecast.",
       "Explore the illustration, then tune the workspace to your day.",
     ) +
-    `<div class="studio-grid"><section><div class="studio-scene">${sceneSvg(state.scene, state.daylight, "studio-sky")}</div><p class="study-label"><b>Scene study · illustration only.</b> These controls do not change the weather data.</p><div class="chips">${scenes.map((s) => `<button id="scene-${s}" class="chip ${state.scene === s ? "active" : ""}" data-action="scene" data-value="${s}" aria-pressed="${state.scene === s}">${s[0].toUpperCase() + s.slice(1)}</button>`).join("")}</div><div class="chips" style="margin-top:12px"><button id="daylight-day" class="chip ${state.daylight ? "active" : ""}" data-action="daylight" data-value="day" aria-pressed="${state.daylight}">Day</button><button id="daylight-night" class="chip ${!state.daylight ? "active" : ""}" data-action="daylight" data-value="night" aria-pressed="${!state.daylight}">Night</button></div></section><aside class="studio-controls"><section class="card"><div class="setting"><div><b>Gentle motion</b><p>Clouds, water and starlight.<br>System reduced-motion settings take priority.</p></div><input id="motion" type="checkbox" aria-label="Gentle motion" ${state.motion ? "checked" : ""}></div><div class="setting"><div><b>Use Fahrenheit</b><p>Rain stays in mm and wind in km/h.</p></div><input id="fahrenheit" type="checkbox" aria-label="Use Fahrenheit" ${state.fahrenheit ? "checked" : ""}></div></section><section class="card"><h3>A measured kind of motion</h3><p class="frame-copy" style="margin-top:8px">Browser frame pacing · requestAnimationFrame cadence. Results describe this browser and viewport.</p><div class="frame-values"><div class="frame-value"><span>p50 / ms</span><b>${state.frames ? state.frames.p50Ms.toFixed(1) : "—"}</b></div><div class="frame-value"><span>p95 / ms</span><b>${state.frames ? state.frames.p95Ms.toFixed(1) : "—"}</b></div></div><p class="frame-copy">${state.frames ? `${state.frames.sampleCount} intervals · ${state.frames.intervalsOver1_5Median} longer than 1.5× the median.` : "No browser timings measured yet. A run collects 240 visible frame intervals."}</p><div class="actions" style="margin-top:14px"><button class="button primary" data-action="measure" ${state.measuring ? "disabled" : ""}>${state.measuring ? "Measuring…" : "Measure motion"}</button><button class="button" data-action="export-frames" ${!state.frames ? "disabled" : ""}>Export</button></div></section><section class="card"><h3>Source and care</h3><p class="frame-copy" style="margin-top:9px">Open-Meteo supplies model forecasts. Successful responses are kept in IndexedDB with their receive time. A failed refresh keeps the previous record.</p><p class="frame-copy" style="margin-top:9px">This independent implementation contains original artwork and no employer code, internal services or confidential data.</p></section></aside></div>`
+    `<div class="studio-grid"><section><div class="chips city-picker" role="group" aria-label="Illustrated city">${places.map((p) => `<button id="studio-city-${p.id}" class="chip ${state.studioPlace === p.id ? "active" : ""}" data-action="studio-place" data-value="${p.id}" aria-pressed="${state.studioPlace === p.id}">${p.name}</button>`).join("")}</div><div class="studio-scene">${sceneSvg(state.scene, state.daylight, "studio-sky", state.studioPlace)}</div><p class="landmark-caption"><b>${cityScene(state.studioPlace).landmark}</b><span>${cityScene(state.studioPlace).description}</span></p><p class="study-label"><b>Scene study · illustration only.</b> These controls do not change the weather data.</p><div class="chips">${scenes.map((s) => `<button id="scene-${s}" class="chip ${state.scene === s ? "active" : ""}" data-action="scene" data-value="${s}" aria-pressed="${state.scene === s}">${s[0].toUpperCase() + s.slice(1)}</button>`).join("")}</div><div class="chips" style="margin-top:12px"><button id="daylight-day" class="chip ${state.daylight ? "active" : ""}" data-action="daylight" data-value="day" aria-pressed="${state.daylight}">Day</button><button id="daylight-night" class="chip ${!state.daylight ? "active" : ""}" data-action="daylight" data-value="night" aria-pressed="${!state.daylight}">Night</button></div></section><aside class="studio-controls"><section class="card"><div class="setting"><div><b>Gentle motion</b><p>Clouds, water and starlight.<br>System reduced-motion settings take priority.</p></div><input id="motion" type="checkbox" aria-label="Gentle motion" ${state.motion ? "checked" : ""}></div><div class="setting"><div><b>Use Fahrenheit</b><p>Rain stays in mm and wind in km/h.</p></div><input id="fahrenheit" type="checkbox" aria-label="Use Fahrenheit" ${state.fahrenheit ? "checked" : ""}></div></section><section class="card"><h3>A measured kind of motion</h3><p class="frame-copy" style="margin-top:8px">Browser frame pacing · requestAnimationFrame cadence. Results describe this browser and viewport.</p><div class="frame-values"><div class="frame-value"><span>p50 / ms</span><b>${state.frames ? state.frames.p50Ms.toFixed(1) : "—"}</b></div><div class="frame-value"><span>p95 / ms</span><b>${state.frames ? state.frames.p95Ms.toFixed(1) : "—"}</b></div></div><p class="frame-copy">${state.frames ? `${state.frames.sampleCount} intervals · ${state.frames.intervalsOver1_5Median} longer than 1.5× the median.` : "No browser timings measured yet. A run collects 240 visible frame intervals."}</p><div class="actions" style="margin-top:14px"><button class="button primary" data-action="measure" ${state.measuring ? "disabled" : ""}>${state.measuring ? "Measuring…" : "Measure motion"}</button><button class="button" data-action="export-frames" ${!state.frames ? "disabled" : ""}>Export</button></div></section><section class="card"><h3>Source and care</h3><p class="frame-copy" style="margin-top:9px">Open-Meteo supplies model forecasts. Successful responses are kept in IndexedDB with their receive time. A failed refresh keeps the previous record.</p><p class="frame-copy" style="margin-top:9px">This independent implementation contains original artwork and no employer code, internal services or confidential data.</p></section></aside></div>`
   );
 }
 function render() {
   const active = document.activeElement?.id;
   app.className = state.motion ? "" : "no-motion";
-  app.innerHTML = `<div class="app"><aside class="sidebar"><div class="brand">${brand()}</div><nav aria-label="Main navigation">${nav()}</nav><div class="sidebar-bottom">A forecast with a sense of place.<br>Made to look at, built to return to.<br><b style="display:block;margin-top:12px">SKYCANVAS / 1.0.0</b></div></aside><main><header class="topbar"><div class="brand mobile-brand">${brand()}</div><div class="top-title">${state.place.name}<span>Iran · Asia/Tehran</span></div><div class="actions"><button id="refresh" class="button primary" data-action="refresh" ${state.loading || state.refreshing ? "disabled" : ""}>${state.refreshing ? "Updating…" : "Get latest"}</button></div></header>${state.message ? `<div class="notice">${escape(state.message)}</div>` : ""}${state.record ? (state.tab === "today" ? today() : state.tab === "hours" ? hoursPage() : state.tab === "places" ? placesPage() : studioPage()) : '<div class="card">Opening the recorded forecast…</div>'}${footer()}</main></div>`;
+  app.innerHTML = `<div class="app"><aside class="sidebar"><div class="brand">${brand()}</div><nav aria-label="Main navigation">${nav()}</nav><div class="sidebar-bottom">A forecast with a sense of place.<br>Made to look at, built to return to.<br><b style="display:block;margin-top:12px">SKYCANVAS / 2.0.0</b></div></aside><main><header class="topbar"><div class="brand mobile-brand">${brand()}</div><div class="top-title">${state.place.name}<span>Iran · Asia/Tehran</span></div><div class="actions"><button id="refresh" class="button primary" data-action="refresh" ${state.loading || state.refreshing ? "disabled" : ""}>${state.refreshing ? "Updating…" : "Get latest"}</button></div></header>${state.message ? `<div class="notice">${escape(state.message)}</div>` : ""}${state.record ? (state.tab === "today" ? today() : state.tab === "hours" ? hoursPage() : state.tab === "places" ? placesPage() : studioPage()) : '<div class="card">Opening the recorded forecast…</div>'}${footer()}</main></div>`;
   connectChart();
   if (active) document.getElementById(active)?.focus({ preventScroll: true });
 }
@@ -571,6 +573,7 @@ async function measure() {
       capturedAt: new Date().toISOString(),
       viewport: { width: innerWidth, height: innerHeight },
       scene: state.scene,
+      city: state.studioPlace,
       daylight: state.daylight,
       motion: state.motion,
       systemReducedMotion: matchMedia("(prefers-reduced-motion:reduce)")
@@ -620,6 +623,7 @@ document.addEventListener("click", (event) => {
     state.focus = null;
     if (action === "day") state.tab = "hours";
   }
+  if (action === "studio-place" && places.some((p) => p.id === value)) state.studioPlace = value;
   if (action === "scene") state.scene = value;
   if (action === "daylight") {
     state.daylight = value === "day";

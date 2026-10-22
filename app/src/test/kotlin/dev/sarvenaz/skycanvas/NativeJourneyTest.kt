@@ -143,6 +143,24 @@ class NativeJourneyTest {
     }
 
     @Test
+    fun cityStudiesHaveTheirOwnSelectionAndKeepTheWeatherRecord() {
+        val before = model.state.value.record!!.payload
+        tab(SkyTab.STUDIO)
+        for (name in listOf("Shiraz", "Tehran", "Tabriz", "Mashhad", "Bandar Abbas")) {
+            scroll(name)
+            compose.onNodeWithText(name, substring = false).performClick()
+            val place = Places.all.first { it.name == name }
+            compose.waitUntil(10_000) { model.state.value.studioPlace == place.id }
+            assertEquals("isfahan", model.state.value.place.id)
+            assertEquals(before, model.state.value.record!!.payload)
+        }
+        scroll("Night")
+        compose.onNodeWithText("Night", substring = false).performClick()
+        compose.waitUntil(10_000) { !model.state.value.studioDay }
+        capture("android-studio-coast")
+    }
+
+    @Test
     fun fahrenheitChangesPresentationAndRetainsCelsiusData() {
         val before = model.state.value.record!!.forecast.current.temperature
         tab(SkyTab.STUDIO)

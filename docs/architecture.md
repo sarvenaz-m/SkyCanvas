@@ -20,7 +20,7 @@ The landscape uses separate Canvas layers for the gradient sky, celestial motion
 
 Open and refresh use the same per-city mutex. An initial seed cannot overwrite a refresh that has just completed. A storage failure is reported as a failure to save, rather than silently promising a forecast will survive the next launch. Room schema version 1 is exported under `core/data/schemas`; no destructive migration fallback is enabled.
 
-The cache has no arbitrary eviction in version 1: there are four fixed places and one response per place. Raw payload size is capped at 1 MiB. Display units are derived from the original Celsius values; changing to Fahrenheit never changes the stored source.
+The cache has no arbitrary eviction in version 2: there are six fixed places and one response per place. Raw payload size is capped at 1 MiB. Display units are derived from the original Celsius values; changing to Fahrenheit never changes the stored source.
 
 ## Network behavior
 

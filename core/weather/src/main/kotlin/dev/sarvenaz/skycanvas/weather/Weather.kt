@@ -23,6 +23,8 @@ object Places {
             Place("shiraz", "Shiraz", 29.5918, 52.5837),
             Place("tehran", "Tehran", 35.6892, 51.3890),
             Place("tabriz", "Tabriz", 38.0800, 46.2919),
+            Place("mashhad", "Mashhad", 36.2605, 59.6168),
+            Place("bandar-abbas", "Bandar Abbas", 27.1832, 56.2666),
         )
 
     fun find(id: String) = all.firstOrNull { it.id == id } ?: all.first()

@@ -1,13 +1,13 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "variant": "preview",
   "minSdk": 26,
   "targetSdk": 36,
   "debuggable": false,
-  "sha256": "3892a43092a7492134de1be498735c472a17620caad2b7e035e3c7a8ee0ef61a",
-  "bytes": 1632912,
+  "sha256": "b2419a5ac75b37f34dc6de00a473075f0d50f0ac7999af6bb82a69d59aa0fff1",
+  "bytes": 1658628,
   "badging": [
-    "package: name='dev.sarvenaz.skycanvas' versionCode='1' versionName='1.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "package: name='dev.sarvenaz.skycanvas' versionCode='2' versionName='2.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
     "uses-permission: name='android.permission.INTERNET'",
     "uses-permission: name='dev.sarvenaz.skycanvas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'"
   ],

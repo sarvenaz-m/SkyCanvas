@@ -145,7 +145,7 @@ try {
   await page.getByRole("button", { name: "Rain", exact: true }).click();
   assert.equal(
     await page.locator(".studio-scene svg").getAttribute("aria-label"),
-    "Illustrated rain landscape, night. Decorative scene.",
+    "Illustrated Tehran rain landscape, night. Azadi & the Alborz. Decorative scene.",
   );
   await nav("Today");
   assert.equal(await page.locator(".hero-condition").innerText(), "Clear sky");
@@ -385,7 +385,7 @@ try {
     path.join(root, "docs/verification/browser-tests.json"),
     JSON.stringify(
       {
-        version: "1.0.0",
+        version: "2.0.0",
         executedAt: new Date().toISOString(),
         browser: "Chromium 134 / Playwright 1.51.1",
         checkCount: checks.length,

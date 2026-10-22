@@ -1,6 +1,8 @@
 package dev.sarvenaz.skycanvas
 
 import android.graphics.Bitmap
+import androidx.test.core.app.ApplicationProvider
+import android.content.Context
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Canvas
 import androidx.compose.ui.graphics.asImageBitmap
@@ -48,7 +50,21 @@ class SceneMotionTest {
         assertNotEquals(day[sky], night[sky])
     }
 
-    private fun frame(daylight: Float, phase: Float): IntArray {
+    @Test
+    fun sixCitiesHaveDistinctLandmarksAndMovingDayAndNightScenes() {
+        val ids = dev.sarvenaz.skycanvas.weather.Places.all.map { it.id }
+        assertEquals(6, ids.size)
+        for (light in listOf(0f, 1f)) {
+            val frames = ids.map { frame(light, 0f, it) }
+            for (i in frames.indices) for (j in 0 until i)
+                assertFalse("${ids[i]} and ${ids[j]} share a landscape", frames[i].contentEquals(frames[j]))
+            for (id in ids) assertFalse("$id has no motion",
+                frame(light, 0f, id).contentEquals(frame(light, .125f, id)))
+        }
+    }
+
+    private fun frame(daylight: Float, phase: Float, city: String = "isfahan"): IntArray {
+        val artwork = CityArtwork.forPlace(ApplicationProvider.getApplicationContext<Context>(), city)
         val bitmap = Bitmap.createBitmap(WIDTH, HEIGHT, Bitmap.Config.ARGB_8888)
         val scope = CanvasDrawScope()
         scope.draw(
@@ -59,7 +75,9 @@ class SceneMotionTest {
         ) {
             drawSceneSky(daylight, false)
             drawSceneCelestial(daylight, phase)
-            drawSceneLandscape(Scene.CLEAR, daylight)
+            drawCityArtwork(artwork, daylight)
+            drawCityArtwork(artwork, daylight, phase, moving = true)
+            drawCityWater(artwork, daylight, phase)
             drawSceneAtmosphere(Scene.CLEAR, daylight, phase)
         }
         return IntArray(WIDTH * HEIGHT).also {

@@ -284,6 +284,7 @@ private fun Hero(state: SkyState, actions: SkyActions) {
                 state.motion,
                 Modifier.fillMaxSize(),
                 blendDaylight = false,
+                placeId = state.place.id,
             )
             Column(Modifier.padding(22.dp)) {
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
@@ -648,7 +649,7 @@ private fun PlaceList(state: SkyState, actions: SkyActions, modifier: Modifier) 
     ) {
         item {
             Eyebrow("A few places to keep close")
-            Heading("Where is your sky?", "Four Iranian cities, with their local time kept intact.")
+            Heading("Where is your sky?", "Six Iranian cities. Six different ways to watch the sky.")
         }
         if (state.message.isNotBlank()) item { Notice(state.message) }
         items(Places.all, key = { it.id }) { place ->
@@ -667,8 +668,9 @@ private fun PlaceList(state: SkyState, actions: SkyActions, modifier: Modifier) 
                     WeatherScene(
                         condition(c?.code).scene,
                         c?.isDay != false,
-                        false,
+                        state.motion,
                         Modifier.fillMaxSize(),
+                        placeId = place.id,
                     )
                     Column(Modifier.padding(18.dp)) {
                         Text(
@@ -724,12 +726,22 @@ private fun Studio(state: SkyState, actions: SkyActions, frames: FrameSummary, m
             )
         }
         item {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(7.dp)) {
+                for (place in Places.all) FilterChip(
+                    state.studioPlace == place.id,
+                    { actions.studioPlace(place.id) },
+                    label = { Text(place.name) },
+                )
+            }
+        }
+        item {
             Surface(shape = RoundedCornerShape(24.dp)) {
                 WeatherScene(
                     state.studioScene,
                     state.studioDay,
                     state.motion,
                     Modifier.fillMaxWidth().height(260.dp),
+                    placeId = state.studioPlace,
                 )
             }
         }
@@ -830,7 +842,7 @@ private fun Studio(state: SkyState, actions: SkyActions, frames: FrameSummary, m
                     modifier = Modifier.padding(top = 8.dp),
                 )
                 Text(
-                    "Version 1.0.0",
+                    "Version 2.0.0",
                     style = MaterialTheme.typography.bodySmall,
                     color = Blue,
                     modifier = Modifier.padding(top = 8.dp),

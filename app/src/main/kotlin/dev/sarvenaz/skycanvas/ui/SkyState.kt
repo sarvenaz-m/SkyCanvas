@@ -28,6 +28,7 @@ data class SkyState(
     val selectedHour: Long? = null,
     val chart: ChartMode = ChartMode.TEMPERATURE,
     val studioScene: Scene = Scene.CLEAR,
+    val studioPlace: String = "isfahan",
     val studioDay: Boolean = true,
     val now: Long = System.currentTimeMillis() / 1000,
 ) {
@@ -52,6 +53,7 @@ data class SkyActions(
     val hour: (Long) -> Unit = {},
     val chart: (ChartMode) -> Unit = {},
     val scene: (Scene) -> Unit = {},
+    val studioPlace: (String) -> Unit = {},
     val daylight: (Boolean) -> Unit = {},
     val resetFrames: () -> Unit = {},
     val exportFrames: () -> Unit = {},

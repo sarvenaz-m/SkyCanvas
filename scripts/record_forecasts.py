@@ -31,6 +31,11 @@ def verify():
         raise ValueError("Android provenance differs from the source manifest")
 
 
+    for name in ["places.json", "city-scenes.json"]:
+        if (ROOT / "data" / name).read_bytes() != (assets / name).read_bytes():
+            raise ValueError(f"Android asset differs: {name}")
+
+
 def record_into(destination):
     destination = destination.resolve()
     # An existing directory may contain records from an earlier run.
@@ -38,7 +43,7 @@ def record_into(destination):
     manifest = json.loads((ROOT / "data/provenance.json").read_text())
     for record in manifest["snapshots"]:
         request = urllib.request.Request(
-            record["url"], headers={"User-Agent": "SkyCanvas/1.0.0 forecast-recording"}
+            record["url"], headers={"User-Agent": "SkyCanvas/2.0.0 forecast-recording"}
         )
         with urllib.request.urlopen(request, timeout=20) as response:
             if "json" not in response.headers.get_content_type():

@@ -1,23 +1,23 @@
 {
-  "version": "1.0.0",
-  "environment": "JDK 17; Robolectric API 35 with native graphics; renderer tests draw production layers to bitmaps",
-  "totalTests": 41,
+  "version": "2.0.0",
+  "environment": "JDK 17; Robolectric API 35 with native graphics; production city geometry, water masks and controlled drawing phases",
+  "totalTests": 43,
   "suites": [
     {
       "name": "dev.sarvenaz.skycanvas.NativeJourneyTest",
-      "tests": "8",
+      "tests": "9",
       "failures": "0",
       "errors": "0",
       "skipped": "0",
-      "timestamp": "2026-10-20T11:09:54.764Z"
+      "timestamp": "2026-10-22T22:36:09.894Z"
     },
     {
       "name": "dev.sarvenaz.skycanvas.SceneMotionTest",
-      "tests": "4",
+      "tests": "5",
       "failures": "0",
       "errors": "0",
       "skipped": "0",
-      "timestamp": "2026-10-20T11:09:49.922Z"
+      "timestamp": "2026-10-22T22:36:19.506Z"
     },
     {
       "name": "dev.sarvenaz.skycanvas.data.HttpApiTest",
@@ -25,7 +25,7 @@
       "failures": "0",
       "errors": "0",
       "skipped": "0",
-      "timestamp": "2026-10-20T11:02:07.116Z"
+      "timestamp": "2026-10-22T22:28:23.967Z"
     },
     {
       "name": "dev.sarvenaz.skycanvas.data.RepositoryTest",
@@ -33,7 +33,7 @@
       "failures": "0",
       "errors": "0",
       "skipped": "0",
-      "timestamp": "2026-10-20T11:02:10.986Z"
+      "timestamp": "2026-10-22T22:28:27.980Z"
     },
     {
       "name": "dev.sarvenaz.skycanvas.data.RoomStoreTest",
@@ -41,7 +41,7 @@
       "failures": "0",
       "errors": "0",
       "skipped": "0",
-      "timestamp": "2026-10-20T11:02:11.161Z"
+      "timestamp": "2026-10-22T22:28:28.150Z"
     },
     {
       "name": "dev.sarvenaz.skycanvas.weather.WeatherTest",
@@ -49,7 +49,7 @@
       "failures": "0",
       "errors": "0",
       "skipped": "0",
-      "timestamp": "2026-10-20T10:59:54.144Z"
+      "timestamp": "2026-10-22T22:25:52.050Z"
     }
   ]
 }

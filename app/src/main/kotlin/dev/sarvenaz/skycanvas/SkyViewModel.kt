@@ -46,6 +46,9 @@ class SkyViewModel(
             hour = { value -> mutable.update { it.copy(selectedHour = value) } },
             chart = { value -> mutable.update { it.copy(chart = value) } },
             scene = { value -> mutable.update { it.copy(studioScene = value) } },
+            studioPlace = { id ->
+                if (Places.all.any { it.id == id }) mutable.update { it.copy(studioPlace = id) }
+            },
             daylight = { value -> mutable.update { it.copy(studioDay = value) } },
         )
 
@@ -82,6 +85,7 @@ class SkyViewModel(
         mutable.update {
             it.copy(
                 place = place,
+                studioPlace = place.id,
                 record = null,
                 loading = true,
                 refreshing = false,

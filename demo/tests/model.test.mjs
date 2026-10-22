@@ -18,7 +18,7 @@ const raw = fs.readFileSync(
 );
 const place = places[0],
   clone = () => JSON.parse(raw);
-test("all four public forecasts match their requested place", () => {
+test("all six public forecasts match their requested place", () => {
   for (const p of places) {
     const f = decode(
       fs.readFileSync(

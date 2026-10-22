@@ -1,0 +1,1621 @@
+{
+  "schema": 1,
+  "palette": {
+    "mountain": [
+      "#b5b8cc",
+      "#465276"
+    ],
+    "land": [
+      "#d6b690",
+      "#293f5a"
+    ],
+    "stone": [
+      "#ba8f70",
+      "#596274"
+    ],
+    "dome": [
+      "#669b9e",
+      "#467482"
+    ],
+    "river": [
+      "#a3cdce",
+      "#244c68"
+    ],
+    "bridge-cap": [
+      "#e8c9a1",
+      "#6a6e80"
+    ],
+    "arch": [
+      "#d6e0d6",
+      "#263b54"
+    ],
+    "tree": [
+      "#4b7270",
+      "#193a4b"
+    ],
+    "detail": [
+      "#f1d7ae",
+      "#8993ab"
+    ],
+    "gold": [
+      "#d5ad62",
+      "#c49c54"
+    ],
+    "flower": [
+      "#cb8c91",
+      "#775a83"
+    ],
+    "snow": [
+      "#eaf2f8",
+      "#929ebd"
+    ],
+    "light": [
+      "#f7d99a",
+      "#f7d99a"
+    ],
+    "white": [
+      "#fff4d8",
+      "#b9cde2"
+    ]
+  },
+  "cities": {
+    "isfahan": {
+      "name": "Isfahan",
+      "landmark": "Bridges of Isfahan",
+      "description": "Arches over quiet water, a turquoise dome and cypress trees.",
+      "palette": {},
+      "groups": [
+        {
+          "id": "isfahan-bridge",
+          "shapes": [
+            {
+              "d": "M0 410L120 338L210 377L390 260L550 370L700 286L890 384L1000 325V650H0Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M0 481L190 423L350 475L530 397L780 462L1000 403V650H0Z",
+              "tone": "land"
+            },
+            {
+              "d": "M300 423h160v98h-160Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M280 423C300 358 360 358 380 325C400 358 460 358 480 423Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M380 325V305",
+              "tone": "stone",
+              "stroke": 4
+            },
+            {
+              "d": "M265 345h18v176h-18Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M259 348a15 15 0 1 0 30 0a15 15 0 1 0 -30 0",
+              "tone": "dome"
+            },
+            {
+              "d": "M490 345h18v176h-18Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M484 348a15 15 0 1 0 30 0a15 15 0 1 0 -30 0",
+              "tone": "dome"
+            },
+            {
+              "d": "M0 579C350 507 640 559 1000 520V650H0Z",
+              "tone": "river"
+            },
+            {
+              "d": "M60 500h880v69h-880Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M40 491h920v12h-920Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M80 572V527.0Q100.0 495.8 120 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M145 572V527.0Q165.0 495.8 185 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M210 572V527.0Q230.0 495.8 250 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M275 572V527.0Q295.0 495.8 315 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M340 572V527.0Q360.0 495.8 380 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M405 572V527.0Q425.0 495.8 445 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M470 572V527.0Q490.0 495.8 510 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M535 572V527.0Q555.0 495.8 575 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M600 572V527.0Q620.0 495.8 640 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M665 572V527.0Q685.0 495.8 705 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M730 572V527.0Q750.0 495.8 770 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M795 572V527.0Q815.0 495.8 835 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M860 572V527.0Q880.0 495.8 900 527.0V572Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M35 377C-7 463.94 0 556.55 35 566C70 556.55 77 463.94 35 377Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M35 520.64V602",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M960 377C918 463.94 925 556.55 960 566C995 556.55 1002 463.94 960 377Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M960 520.64V602",
+              "tone": "stone",
+              "stroke": 7
+            }
+          ]
+        },
+        {
+          "id": "isfahan-lights",
+          "shapes": [
+            {
+              "d": "M100 540V554",
+              "tone": "light",
+              "stroke": 2
+            },
+            {
+              "d": "M295 540V554",
+              "tone": "light",
+              "stroke": 2
+            },
+            {
+              "d": "M490 540V554",
+              "tone": "light",
+              "stroke": 2
+            },
+            {
+              "d": "M685 540V554",
+              "tone": "light",
+              "stroke": 2
+            },
+            {
+              "d": "M880 540V554",
+              "tone": "light",
+              "stroke": 2
+            }
+          ],
+          "nightOnly": true
+        }
+      ],
+      "waterMask": "M0 579C350 507 640 559 1000 520V650H0Z",
+      "waterY": 592
+    },
+    "shiraz": {
+      "name": "Shiraz",
+      "landmark": "Hafezieh gardens",
+      "description": "A garden pavilion, slender cypresses and roses in the breeze.",
+      "palette": {
+        "land": [
+          "#c9c6a2",
+          "#2d4353"
+        ],
+        "dome": [
+          "#70979b",
+          "#4e7585"
+        ],
+        "river": [
+          "#b2d5ce",
+          "#285267"
+        ]
+      },
+      "groups": [
+        {
+          "id": "shiraz-pavilion",
+          "shapes": [
+            {
+              "d": "M0 430L170 366L340 420L560 337L800 410L1000 350V650H0Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M0 481L190 423L350 475L530 397L780 462L1000 403V650H0Z",
+              "tone": "land"
+            },
+            {
+              "d": "M0 548h1000v102h-1000Z",
+              "tone": "land"
+            },
+            {
+              "d": "M0 572H1000M0 607H1000",
+              "tone": "detail",
+              "stroke": 2,
+              "opacity": 0.2
+            },
+            {
+              "d": "M300 538h440v18h-440Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M319 521h402v17h-402Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M340 506h360v15h-360Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M367 399h12v108h-12Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M363 392h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M363 503h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M414 399h12v108h-12Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M410 392h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M410 503h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M461 399h12v108h-12Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M457 392h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M457 503h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M508 399h12v108h-12Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M504 392h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M504 503h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M555 399h12v108h-12Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M551 392h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M551 503h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M602 399h12v108h-12Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M598 392h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M598 503h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M649 399h12v108h-12Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M645 392h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M645 503h20v8h-20Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M332 395L365 373Q438 341 520 302Q602 341 675 373L708 395Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M355 374Q438 350 520 302Q602 350 685 374L662 385H378Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M520 302V287",
+              "tone": "gold",
+              "stroke": 4
+            },
+            {
+              "d": "M520 308Q392 357 392 390",
+              "tone": "stone",
+              "stroke": 2,
+              "opacity": 0.6
+            },
+            {
+              "d": "M520 308Q443 357 443 390",
+              "tone": "stone",
+              "stroke": 2,
+              "opacity": 0.6
+            },
+            {
+              "d": "M520 308Q494 357 494 390",
+              "tone": "stone",
+              "stroke": 2,
+              "opacity": 0.6
+            },
+            {
+              "d": "M520 308Q546 357 546 390",
+              "tone": "stone",
+              "stroke": 2,
+              "opacity": 0.6
+            },
+            {
+              "d": "M520 308Q597 357 597 390",
+              "tone": "stone",
+              "stroke": 2,
+              "opacity": 0.6
+            },
+            {
+              "d": "M520 308Q648 357 648 390",
+              "tone": "stone",
+              "stroke": 2,
+              "opacity": 0.6
+            },
+            {
+              "d": "M100 596L225 566H798L920 596L795 626H225Z",
+              "tone": "river"
+            },
+            {
+              "d": "M105 596H915",
+              "tone": "detail",
+              "stroke": 3
+            },
+            {
+              "d": "M280 336C238 436.74 245 544.05 280 555C315 544.05 322 436.74 280 336Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M280 502.44V591",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M770 336C728 436.74 735 544.05 770 555C805 544.05 812 436.74 770 336Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M770 502.44V591",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M70 397C28 475.65999999999997 35 559.45 70 568C105 559.45 112 475.65999999999997 70 397Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M70 526.96V604",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M930 397C888 475.65999999999997 895 559.45 930 568C965 559.45 972 475.65999999999997 930 397Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M930 526.96V604",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M142 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M182 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M222 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M262 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M302 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M342 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M382 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M422 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M462 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M502 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M542 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M582 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M622 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M662 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M702 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M742 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M782 557a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M822 565a8 5 0 1 0 16 0a8 5 0 1 0 -16 0",
+              "tone": "flower"
+            }
+          ]
+        },
+        {
+          "id": "shiraz-petals",
+          "shapes": [
+            {
+              "d": "M260 464a5 3 0 1 0 10 0a5 3 0 1 0 -10 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M779 485a5 3 0 1 0 10 0a5 3 0 1 0 -10 0",
+              "tone": "flower"
+            },
+            {
+              "d": "M193 511a4 2 0 1 0 8 0a4 2 0 1 0 -8 0",
+              "tone": "flower"
+            }
+          ],
+          "motion": "petals"
+        },
+        {
+          "id": "shiraz-pavilion-lights",
+          "shapes": [
+            {
+              "d": "M359 517H681",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M347 397H693",
+              "tone": "light",
+              "stroke": 2
+            }
+          ],
+          "nightOnly": true
+        }
+      ],
+      "waterMask": "M100 596L225 566H798L920 596L795 626H225Z",
+      "waterY": 596
+    },
+    "tehran": {
+      "name": "Tehran",
+      "landmark": "Azadi & the Alborz",
+      "description": "The open arch of Azadi beneath the snow-lined Alborz.",
+      "palette": {
+        "land": [
+          "#bcc5bd",
+          "#263e52"
+        ],
+        "stone": [
+          "#b2a796",
+          "#5d6c84"
+        ],
+        "river": [
+          "#aacbd0",
+          "#244c68"
+        ]
+      },
+      "groups": [
+        {
+          "id": "tehran-azadi",
+          "shapes": [
+            {
+              "d": "M0 425L125 318L210 357L345 240L440 331L550 214L700 360L795 288L1000 420V650H0Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M0 481L190 423L350 475L530 397L780 462L1000 403V650H0Z",
+              "tone": "land"
+            },
+            {
+              "d": "M292 285L345 240L401 293L352 275L330 282Z",
+              "tone": "snow"
+            },
+            {
+              "d": "M481 277L550 214L630 290L562 258L536 266Z",
+              "tone": "snow"
+            },
+            {
+              "d": "M0 471h42v24h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M63 454h42v41h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M126 437h42v58h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M189 420h42v75h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M252 458h42v37h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M315 441h42v54h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M378 424h42v71h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M441 462h42v33h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M504 445h42v50h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M567 428h42v67h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M630 466h42v29h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M693 449h42v46h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M756 432h42v63h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M819 470h42v25h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M882 453h42v42h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M945 436h42v59h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M1008 419h42v76h-42Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M0 548h1000v102h-1000Z",
+              "tone": "land"
+            },
+            {
+              "d": "M0 572H1000M0 607H1000",
+              "tone": "detail",
+              "stroke": 2,
+              "opacity": 0.2
+            },
+            {
+              "d": "M0 560L420 524H644L1000 568V650H0Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M75 627L394 577H736L968 627Z",
+              "tone": "river"
+            },
+            {
+              "d": "M365 545L426 387L447 311L597 311L620 387L685 545H593L566 433Q523 378 480 433L454 545Z",
+              "tone": "white"
+            },
+            {
+              "d": "M365 545L426 387L447 311L462 322L452 398L409 545Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M597 311L620 387L685 545H643L591 397L582 322Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M447 303h150v14h-150Z",
+              "tone": "white"
+            },
+            {
+              "d": "M462 325L480 392M582 325L565 392M461 338H584M457 352H588",
+              "tone": "stone",
+              "stroke": 2
+            },
+            {
+              "d": "M454 545L480 433Q523 378 566 433L593 545H567L551 451Q523 417 495 451L480 545Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M452 373Q523 357 594 373",
+              "tone": "stone",
+              "stroke": 1.4,
+              "opacity": 0.45
+            },
+            {
+              "d": "M444 396Q523 375 603 396",
+              "tone": "stone",
+              "stroke": 1.4,
+              "opacity": 0.45
+            },
+            {
+              "d": "M436 419Q523 393 612 419",
+              "tone": "stone",
+              "stroke": 1.4,
+              "opacity": 0.45
+            },
+            {
+              "d": "M428 442Q523 411 621 442",
+              "tone": "stone",
+              "stroke": 1.4,
+              "opacity": 0.45
+            },
+            {
+              "d": "M420 465Q523 429 630 465",
+              "tone": "stone",
+              "stroke": 1.4,
+              "opacity": 0.45
+            },
+            {
+              "d": "M412 488Q523 447 639 488",
+              "tone": "stone",
+              "stroke": 1.4,
+              "opacity": 0.45
+            },
+            {
+              "d": "M404 511Q523 465 648 511",
+              "tone": "stone",
+              "stroke": 1.4,
+              "opacity": 0.45
+            },
+            {
+              "d": "M116 539a64 15 0 1 0 128 0a64 15 0 1 0 -128 0",
+              "tone": "tree"
+            },
+            {
+              "d": "M751 540a80 16 0 1 0 160 0a80 16 0 1 0 -160 0",
+              "tone": "tree"
+            }
+          ]
+        },
+        {
+          "id": "tehran-city-lights",
+          "shapes": [
+            {
+              "d": "M65 470v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M128 457v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M191 444v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M254 466v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M317 453v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M380 440v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M443 462v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M506 449v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M569 436v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M632 458v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M695 445v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M758 467v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M821 454v7",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M884 441v7",
+              "tone": "light",
+              "stroke": 3
+            }
+          ],
+          "motion": "glint",
+          "nightOnly": true
+        }
+      ],
+      "waterMask": "M75 627L394 577H736L968 627Z",
+      "waterY": 605
+    },
+    "tabriz": {
+      "name": "Tabriz",
+      "landmark": "El Goli pavilion",
+      "description": "A lakeside pavilion, garden terraces and long reflections.",
+      "palette": {
+        "land": [
+          "#c0c8b3",
+          "#2c4059"
+        ],
+        "dome": [
+          "#8e9e91",
+          "#5a718b"
+        ],
+        "river": [
+          "#95bec9",
+          "#234d6b"
+        ],
+        "stone": [
+          "#b98e79",
+          "#64647f"
+        ]
+      },
+      "groups": [
+        {
+          "id": "tabriz-el-goli",
+          "shapes": [
+            {
+              "d": "M0 424L140 344L270 392L435 300L585 385L730 318L1000 415V650H0Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M0 481L190 423L350 475L530 397L780 462L1000 403V650H0Z",
+              "tone": "land"
+            },
+            {
+              "d": "M0 498h1000v152h-1000Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M0 523h1000v127h-1000Z",
+              "tone": "river"
+            },
+            {
+              "d": "M420 486h170v164h-170Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M438 506h134v144h-134Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M438 520H572",
+              "tone": "detail",
+              "stroke": 3
+            },
+            {
+              "d": "M438 540H572",
+              "tone": "detail",
+              "stroke": 3
+            },
+            {
+              "d": "M438 562H572",
+              "tone": "detail",
+              "stroke": 3
+            },
+            {
+              "d": "M438 586H572",
+              "tone": "detail",
+              "stroke": 3
+            },
+            {
+              "d": "M438 614H572",
+              "tone": "detail",
+              "stroke": 3
+            },
+            {
+              "d": "M438 642H572",
+              "tone": "detail",
+              "stroke": 3
+            },
+            {
+              "d": "M332 470h346v23h-346Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M349 447h312v23h-312Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M372 391h266v57h-266Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M389 347h232v44h-232Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M396 448V414.0Q411.0 390.6 426 414.0V448Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M400 358h23v24h-23Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M442 448V414.0Q457.0 390.6 472 414.0V448Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M446 358h23v24h-23Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M488 448V414.0Q503.0 390.6 518 414.0V448Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M492 358h23v24h-23Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M534 448V414.0Q549.0 390.6 564 414.0V448Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M538 358h23v24h-23Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M580 448V414.0Q595.0 390.6 610 414.0V448Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M584 358h23v24h-23Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M358 348L393 328L505 287L617 328L651 348Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M505 287V270",
+              "tone": "gold",
+              "stroke": 4
+            },
+            {
+              "d": "M371 349H639",
+              "tone": "detail",
+              "stroke": 4
+            },
+            {
+              "d": "M60 377C18 440.02 25 507.15 60 514C95 507.15 102 440.02 60 377Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M60 481.12V550",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M150 377C108 440.02 115 507.15 150 514C185 507.15 192 440.02 150 377Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M150 481.12V550",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M245 377C203 440.02 210 507.15 245 514C280 507.15 287 440.02 245 377Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M245 481.12V550",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M750 377C708 440.02 715 507.15 750 514C785 507.15 792 440.02 750 377Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M750 481.12V550",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M845 377C803 440.02 810 507.15 845 514C880 507.15 887 440.02 845 377Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M845 481.12V550",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M940 377C898 440.02 905 507.15 940 514C975 507.15 982 440.02 940 377Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M940 481.12V550",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M0 519H1000",
+              "tone": "detail",
+              "stroke": 5
+            }
+          ]
+        },
+        {
+          "id": "tabriz-pavilion-lights",
+          "shapes": [
+            {
+              "d": "M404 439V416.0Q411.0 405.08 418 416.0V439Z",
+              "tone": "light"
+            },
+            {
+              "d": "M450 439V416.0Q457.0 405.08 464 416.0V439Z",
+              "tone": "light"
+            },
+            {
+              "d": "M496 439V416.0Q503.0 405.08 510 416.0V439Z",
+              "tone": "light"
+            },
+            {
+              "d": "M542 439V416.0Q549.0 405.08 556 416.0V439Z",
+              "tone": "light"
+            },
+            {
+              "d": "M588 439V416.0Q595.0 405.08 602 416.0V439Z",
+              "tone": "light"
+            }
+          ],
+          "nightOnly": true
+        },
+        {
+          "id": "tabriz-fountain",
+          "shapes": [
+            {
+              "d": "M240 564Q244 514 267 557M240 564Q235 524 214 556",
+              "tone": "white",
+              "stroke": 2
+            }
+          ],
+          "motion": "fountain"
+        }
+      ],
+      "waterMask": "M0 523H420V650H0Z M590 523H1000V650H590Z",
+      "waterY": 587
+    },
+    "mashhad": {
+      "name": "Mashhad",
+      "landmark": "Golden dome & courtyard",
+      "description": "A golden dome, paired minarets and a still courtyard pool.",
+      "palette": {
+        "land": [
+          "#d7c3a1",
+          "#353f59"
+        ],
+        "stone": [
+          "#bba485",
+          "#59647e"
+        ],
+        "dome": [
+          "#62999d",
+          "#416981"
+        ],
+        "river": [
+          "#b0d2d0",
+          "#29506a"
+        ]
+      },
+      "groups": [
+        {
+          "id": "mashhad-courtyard",
+          "shapes": [
+            {
+              "d": "M0 441L130 388L310 427L495 353L735 410L1000 373V650H0Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M0 481L190 423L350 475L530 397L780 462L1000 403V650H0Z",
+              "tone": "land"
+            },
+            {
+              "d": "M0 548h1000v102h-1000Z",
+              "tone": "land"
+            },
+            {
+              "d": "M0 572H1000M0 607H1000",
+              "tone": "detail",
+              "stroke": 2,
+              "opacity": 0.2
+            },
+            {
+              "d": "M90 470h820v80h-820Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M84 463h832v12h-832Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M110 550V503.0Q125.0 479.6 140 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M164 550V503.0Q179.0 479.6 194 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M218 550V503.0Q233.0 479.6 248 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M272 550V503.0Q287.0 479.6 302 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M326 550V503.0Q341.0 479.6 356 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M380 550V503.0Q395.0 479.6 410 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M434 550V503.0Q449.0 479.6 464 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M488 550V503.0Q503.0 479.6 518 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M542 550V503.0Q557.0 479.6 572 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M596 550V503.0Q611.0 479.6 626 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M650 550V503.0Q665.0 479.6 680 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M704 550V503.0Q719.0 479.6 734 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M758 550V503.0Q773.0 479.6 788 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M812 550V503.0Q827.0 479.6 842 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M866 550V503.0Q881.0 479.6 896 503.0V550Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M409 394h222v138h-222Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M452 532V498.0Q520.0 391.92 588 498.0V532Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M477 532V492.0Q520.0 424.92 563 492.0V532Z",
+              "tone": "arch"
+            },
+            {
+              "d": "M404 395C408 347 467 337 520 287C573 337 632 347 636 395Z",
+              "tone": "gold"
+            },
+            {
+              "d": "M404 396a116 9 0 1 0 232 0a116 9 0 1 0 -232 0",
+              "tone": "gold"
+            },
+            {
+              "d": "M520 287V264",
+              "tone": "gold",
+              "stroke": 4
+            },
+            {
+              "d": "M515 264a5 5 0 1 0 10 0a5 5 0 1 0 -10 0",
+              "tone": "gold"
+            },
+            {
+              "d": "M332 335h26v203h-26Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M325 342h40v9h-40Z",
+              "tone": "gold"
+            },
+            {
+              "d": "M327 372h36v9h-36Z",
+              "tone": "gold"
+            },
+            {
+              "d": "M325 321a20 21 0 1 0 40 0a20 21 0 1 0 -40 0",
+              "tone": "gold"
+            },
+            {
+              "d": "M345 302V283",
+              "tone": "gold",
+              "stroke": 3
+            },
+            {
+              "d": "M337 396h16v25h-16Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M677 335h26v203h-26Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M670 342h40v9h-40Z",
+              "tone": "gold"
+            },
+            {
+              "d": "M672 372h36v9h-36Z",
+              "tone": "gold"
+            },
+            {
+              "d": "M670 321a20 21 0 1 0 40 0a20 21 0 1 0 -40 0",
+              "tone": "gold"
+            },
+            {
+              "d": "M690 302V283",
+              "tone": "gold",
+              "stroke": 3
+            },
+            {
+              "d": "M682 396h16v25h-16Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M205 597L340 560H720L855 597L720 631H340Z",
+              "tone": "river"
+            },
+            {
+              "d": "M210 597H850",
+              "tone": "detail",
+              "stroke": 2
+            },
+            {
+              "d": "M63 395C21 469.06 28 547.95 63 556C98 547.95 105 469.06 63 395Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M63 517.36V592",
+              "tone": "stone",
+              "stroke": 7
+            },
+            {
+              "d": "M937 395C895 469.06 902 547.95 937 556C972 547.95 979 469.06 937 395Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M937 517.36V592",
+              "tone": "stone",
+              "stroke": 7
+            }
+          ]
+        },
+        {
+          "id": "mashhad-golden-light",
+          "shapes": [
+            {
+              "d": "M413 387C428 345 477 330 520 290C563 330 612 345 627 387",
+              "tone": "light",
+              "stroke": 3
+            },
+            {
+              "d": "M330 348H360M675 348H705",
+              "tone": "light",
+              "stroke": 3
+            }
+          ],
+          "nightOnly": true,
+          "motion": "glint"
+        },
+        {
+          "id": "mashhad-fountain",
+          "shapes": [
+            {
+              "d": "M530 601Q533 557 554 590M530 601Q525 562 506 591",
+              "tone": "white",
+              "stroke": 2
+            }
+          ],
+          "motion": "fountain"
+        }
+      ],
+      "waterMask": "M205 597L340 560H720L855 597L720 631H340Z",
+      "waterY": 600
+    },
+    "bandar-abbas": {
+      "name": "Bandar Abbas",
+      "landmark": "Persian Gulf waterfront",
+      "description": "A wooden lenj, swaying palms and the warm light of the Persian Gulf.",
+      "palette": {
+        "mountain": [
+          "#c1b0ad",
+          "#48526e"
+        ],
+        "land": [
+          "#dbc2a0",
+          "#38485e"
+        ],
+        "river": [
+          "#87c4cf",
+          "#20506e"
+        ],
+        "tree": [
+          "#4c8176",
+          "#1b4551"
+        ],
+        "stone": [
+          "#b18467",
+          "#657083"
+        ],
+        "bridge-cap": [
+          "#efd7ac",
+          "#616682"
+        ]
+      },
+      "groups": [
+        {
+          "id": "bandar-waterfront",
+          "shapes": [
+            {
+              "d": "M0 461L120 431L210 450L315 417L430 458L540 438L690 459L805 422L1000 461V650H0Z",
+              "tone": "mountain"
+            },
+            {
+              "d": "M0 467h1000v183h-1000Z",
+              "tone": "river"
+            },
+            {
+              "d": "M0 563Q180 535 345 565T660 589Q850 612 1000 577V650H0Z",
+              "tone": "land"
+            },
+            {
+              "d": "M0 589Q183 560 360 586T685 613Q862 630 1000 604V650H0Z",
+              "tone": "bridge-cap"
+            },
+            {
+              "d": "M35 456h58v30h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M128 445h58v41h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M221 434h58v52h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M314 451h58v35h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M407 440h58v46h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M500 429h58v57h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M593 446h58v40h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M686 435h58v51h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M779 452h58v34h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M872 441h58v45h-58Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M0 490H1000",
+              "tone": "white",
+              "stroke": 2,
+              "opacity": 0.38
+            }
+          ]
+        },
+        {
+          "id": "bandar-lenj",
+          "shapes": [
+            {
+              "d": "M540 509Q622 523 765 498L741 534Q640 553 565 532Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M551 512Q652 526 755 503",
+              "tone": "detail",
+              "stroke": 4
+            },
+            {
+              "d": "M651 511V351",
+              "tone": "stone",
+              "stroke": 5
+            },
+            {
+              "d": "M645 366L568 487H645Z",
+              "tone": "white"
+            },
+            {
+              "d": "M661 396L730 480L662 490Z",
+              "tone": "detail"
+            },
+            {
+              "d": "M684 486h35v24h-35Z",
+              "tone": "dome"
+            },
+            {
+              "d": "M651 355L750 502",
+              "tone": "stone",
+              "stroke": 1.5
+            }
+          ],
+          "motion": "boat",
+          "pivot": [
+            650,
+            520
+          ]
+        },
+        {
+          "id": "bandar-palm-105",
+          "shapes": [
+            {
+              "d": "M105 360Q128 480 114 599H130Q144 465 112 360Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M105 360Q46 348 13 397Q57 367 105 367Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M105 360Q37 322 5 347Q48 341 105 367Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M105 360Q76 295 50 294Q87 314 105 367Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M105 360Q122 288 139 288Q133 307 105 367Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M105 360Q162 315 196 337Q173 334 105 367Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M105 360Q173 364 198 402Q184 383 105 367Z",
+              "tone": "tree"
+            }
+          ],
+          "motion": "sway",
+          "pivot": [
+            125,
+            598
+          ]
+        },
+        {
+          "id": "bandar-palm-892",
+          "shapes": [
+            {
+              "d": "M892 381Q912.24 486.6 899.92 591.3199999999999H914.0Q926.32 473.4 898.16 381Z",
+              "tone": "stone"
+            },
+            {
+              "d": "M892 381Q840.08 370.44 811.04 413.56Q849.76 387.16 892 387.16Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M892 381Q832.16 347.56 804.0 369.56Q841.84 364.28 892 387.16Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M892 381Q866.48 323.8 843.6 322.92Q876.16 340.52 892 387.16Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M892 381Q906.96 317.64 921.92 317.64Q916.64 334.36 892 387.16Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M892 381Q942.16 341.4 972.08 360.76Q951.84 358.12 892 387.16Z",
+              "tone": "tree"
+            },
+            {
+              "d": "M892 381Q951.84 384.52 973.84 417.96Q961.52 401.24 892 387.16Z",
+              "tone": "tree"
+            }
+          ],
+          "motion": "sway",
+          "pivot": [
+            909.6,
+            590.44
+          ]
+        },
+        {
+          "id": "bandar-lanterns",
+          "shapes": [
+            {
+              "d": "M52.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M145.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M238.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M331.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M424.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M517.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M610.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M703.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M796.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            },
+            {
+              "d": "M889.5 471a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+              "tone": "light"
+            }
+          ],
+          "nightOnly": true
+        }
+      ],
+      "waterMask": "M0 467H1000V577Q850 612 660 589Q500 566 345 565Q180 535 0 563Z",
+      "waterY": 512
+    }
+  }
+}

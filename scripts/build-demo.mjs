@@ -28,13 +28,23 @@ const chunks = await Promise.all(
     fs.readFile(path.join(root, "demo/src", name + ".mjs"), "utf8"),
   ),
 );
-const script = chunks
-  .map((s) =>
-    s
-      .replace(/^import[\s\S]*?from\s+["'][^"']+["'];?\s*\n/gm, "")
-      .replace(/^export /gm, ""),
-  )
-  .join("\n");
+const artwork = JSON.parse(
+  await fs.readFile(path.join(root, "data/city-scenes.json"), "utf8"),
+);
+const script =
+  "const cityArtwork = " +
+  JSON.stringify(artwork) +
+  ";\n" +
+  chunks
+    .map((s) =>
+      s
+        .replace(
+          /^import[\s\S]*?from\s+["'][^"']+["'](?:\s+with\s*\{[^}]*\})?;?\s*\n/gm,
+          "",
+        )
+        .replace(/^export /gm, ""),
+    )
+    .join("\n");
 let html = await fs.readFile(path.join(root, "demo/src/template.html"), "utf8");
 html = html
   .replace("__STYLE__", css)

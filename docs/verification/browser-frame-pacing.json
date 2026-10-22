@@ -3,15 +3,16 @@
   "sampleCount": 240,
   "p50Ms": 16.69999999999891,
   "p95Ms": 16.700000000000728,
-  "meanCadenceHz": 60.00300015000751,
+  "meanCadenceHz": 60.00300015000748,
   "intervalsOver1_5Median": 0,
   "notes": "requestAnimationFrame cadence in this browser. This is not an Android frame benchmark.",
-  "capturedAt": "2026-10-20T10:56:15.230Z",
+  "capturedAt": "2026-10-22T22:18:43.770Z",
   "viewport": {
     "width": 1440,
     "height": 1100
   },
   "scene": "rain",
+  "city": "isfahan",
   "daylight": false,
   "motion": true,
   "systemReducedMotion": false

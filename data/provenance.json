@@ -36,6 +36,24 @@
       "license": "CC BY 4.0",
       "attribution": "Weather data by Open-Meteo",
       "purpose": "Recorded model forecast for offline exploration; not a live reading"
+    },
+    {
+      "placeId": "mashhad",
+      "retrievedAt": "2026-10-22T22:12:42.813444+00:00",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=36.2605&longitude=59.6168&timezone=Asia%2FTehran&current=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cis_day%2Cprecipitation%2Cweather_code%2Ccloud_cover%2Cwind_speed_10m&hourly=temperature_2m%2Cprecipitation_probability%2Cprecipitation%2Cweather_code%2Cis_day&daily=weather_code%2Ctemperature_2m_max%2Ctemperature_2m_min%2Csunrise%2Csunset%2Cprecipitation_sum%2Cprecipitation_probability_max&timeformat=unixtime&forecast_days=7&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm",
+      "sha256": "371ef48ba6aae9095f3b39c06dbc35813712b30f620e07348d87f63ecd20f4ef",
+      "license": "CC BY 4.0",
+      "attribution": "Weather data by Open-Meteo",
+      "purpose": "Recorded model forecast for offline exploration; not a live reading"
+    },
+    {
+      "placeId": "bandar-abbas",
+      "retrievedAt": "2026-10-22T22:12:42.821089+00:00",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=27.1832&longitude=56.2666&timezone=Asia%2FTehran&current=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cis_day%2Cprecipitation%2Cweather_code%2Ccloud_cover%2Cwind_speed_10m&hourly=temperature_2m%2Cprecipitation_probability%2Cprecipitation%2Cweather_code%2Cis_day&daily=weather_code%2Ctemperature_2m_max%2Ctemperature_2m_min%2Csunrise%2Csunset%2Cprecipitation_sum%2Cprecipitation_probability_max&timeformat=unixtime&forecast_days=7&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm",
+      "sha256": "ef88bbff8bbd153f457126a74c293dbea6d4be626e500e7b9e0b9c74b0272759",
+      "license": "CC BY 4.0",
+      "attribution": "Weather data by Open-Meteo",
+      "purpose": "Recorded model forecast for offline exploration; not a live reading"
     }
   ]
 }

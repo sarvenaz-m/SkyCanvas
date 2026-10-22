@@ -1,6 +1,6 @@
 # Data sources
 
-SkyCanvas uses the [Open-Meteo Forecast API](https://open-meteo.com/en/docs). The repository includes four unmodified JSON responses fetched on 19 October 2026. Each file's exact URL, UTC retrieval time and SHA-256 digest are recorded in `data/provenance.json`. The same bytes are bundled in the Android assets and embedded in the offline companion.
+SkyCanvas uses the [Open-Meteo Forecast API](https://open-meteo.com/en/docs). The repository includes six unmodified JSON responses: four from the first release and two recorded for version 2. Each file's exact URL, UTC retrieval time and SHA-256 digest are recorded in `data/provenance.json`. The same bytes are bundled in the Android assets and embedded in the offline companion.
 
 | Place | Requested latitude | Requested longitude | Display time zone |
 | --- | ---: | ---: | --- |
@@ -26,6 +26,6 @@ The scene is an interpretation of a condition code. Its bridge, river, buildings
 
 **Weather data by Open-Meteo.** Data is provided under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The raw records are unchanged; the UI converts units, chooses ranges, rounds labels and draws charts from them. Those presentation changes are SkyCanvas's responsibility.
 
-The [API service terms](https://open-meteo.com/en/terms) are separate from the data licence. The free endpoint is for non-commercial use within the provider's limits. A commercial deployment needs the appropriate service plan or another authorized endpoint. Version 1 makes brief foreground requests for four fixed places; it does not run a collection service or a background polling schedule.
+The [API service terms](https://open-meteo.com/en/terms) are separate from the data licence. The free endpoint is for non-commercial use within the provider's limits. A commercial deployment needs the appropriate service plan or another authorized endpoint. Version 2 makes brief foreground requests for six fixed places; it does not run a collection service or a background polling schedule.
 
 `python3 scripts/record_forecasts.py --verify` checks the pinned records, their hashes and the matching Android assets. To inspect a new forecast without changing the release dataset, `--output-dir <new-directory>` records fresh responses in a new directory. Network responses change over time, so a fresh fetch is not expected to match the pinned bytes.

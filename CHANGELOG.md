@@ -1,5 +1,15 @@
 # Release notes
 
+## 2.0.0
+
+- Add original day and night landscapes for Shiraz, Tehran, Tabriz, Mashhad and Bandar Abbas; retain Isfahan's bridge and dome.
+- Share city vector geometry between Kotlin Canvas and the offline browser companion.
+- Add Mashhad and Bandar Abbas with real recorded Open-Meteo forecasts and complete provenance.
+- Add a city picker in Studio, independent of the selected forecast.
+- Animate garden petals, fountains, city lights, a coastal lenj and palm trees, alongside clouds, water and starlight.
+- Add a direct Live Demo button, fresh day/night galleries and updated desktop and mobile screenshots.
+
+
 ## 1.0.0
 
 The first release brings together a native Compose weather app and an offline browser companion. Isfahan, Shiraz, Tehran and Tabriz have recorded public forecasts with source metadata, and foreground refresh keeps the last successful download available when a connection fails.

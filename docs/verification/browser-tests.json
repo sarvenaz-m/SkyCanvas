@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "executedAt": "2026-10-20T10:56:16.117Z",
+  "version": "2.0.0",
+  "executedAt": "2026-10-22T22:18:44.561Z",
   "browser": "Chromium 134 / Playwright 1.51.1",
   "checkCount": 35,
   "checks": [

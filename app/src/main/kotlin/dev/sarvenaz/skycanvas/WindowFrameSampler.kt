@@ -65,7 +65,7 @@ class WindowFrameSampler {
         return JSONObject()
             .apply {
                 put("schema", "skycanvas.window-frames/v1")
-                put("version", "1.0.0")
+                put("version", "2.0.0")
                 put("source", "Android Window.FrameMetrics")
                 put("capturedAtEpochMs", System.currentTimeMillis())
                 put("deviceModel", Build.MODEL)

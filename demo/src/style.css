@@ -841,6 +841,42 @@ footer {
   animation: none !important;
   transition: none !important;
 }
+.city-picker { margin-bottom: 14px; }
+.landmark-caption { margin: 16px 0 10px; color: var(--navy, #183754); }
+.landmark-caption b { display: block; font-size: 17px; }
+.landmark-caption span { display: block; margin-top: 5px; font-size: 13px; }
+.city-art { fill: var(--art-day); }
+.city-art.art-stroke { fill: none; stroke: var(--art-day); }
+.is-night .city-art { fill: var(--art-night); }
+.is-night .city-art.art-stroke { fill: none; stroke: var(--art-night); }
+.night-detail { opacity: 0; transition: opacity 1.6s ease; }
+.is-night .night-detail { opacity: 1; }
+.city-motion { transform-box: view-box; }
+.city-boat { animation: city-boat 9s ease-in-out infinite; }
+.city-sway { animation: city-sway 12s ease-in-out infinite; }
+.city-petals { animation: city-petals 11s ease-in-out infinite; }
+.city-fountain { animation: city-fountain 4s ease-in-out infinite; }
+.city-glint { animation: city-glint 8s ease-in-out infinite; }
+@keyframes city-boat {
+  0%, 100% { transform: translateY(2px) rotate(-.6deg); }
+  50% { transform: translateY(-3px) rotate(.7deg); }
+}
+@keyframes city-sway {
+  0%, 100% { transform: rotate(-.7deg); }
+  50% { transform: rotate(.8deg); }
+}
+@keyframes city-petals {
+  0%, 100% { transform: translate(-4px, -7px); opacity: .5; }
+  50% { transform: translate(14px, 9px); opacity: .85; }
+}
+@keyframes city-fountain {
+  0%, 100% { transform: translateY(2px); opacity: .5; }
+  50% { transform: translateY(-3px); opacity: .9; }
+}
+@keyframes city-glint {
+  0%, 100% { opacity: .65; }
+  50% { opacity: 1; }
+}
 @keyframes sunlight {
   0%,
   100% {

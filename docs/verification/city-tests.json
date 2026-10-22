@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "executedAt": "2026-10-22T22:30:35.785Z",
+  "browser": "134.0.6998.35",
+  "checkCount": 15,
+  "checks": [
+    "Isfahan: Places and Today display the city's own landscape and forecast",
+    "Shiraz: Places and Today display the city's own landscape and forecast",
+    "Tehran: Places and Today display the city's own landscape and forecast",
+    "Tabriz: Places and Today display the city's own landscape and forecast",
+    "Mashhad: Places and Today display the city's own landscape and forecast",
+    "Bandar Abbas: Places and Today display the city's own landscape and forecast",
+    "the new coastal city survives a saved preference and reload",
+    "Isfahan: both light states move, all weather studies retain the city, and motion can stop",
+    "Shiraz: both light states move, all weather studies retain the city, and motion can stop",
+    "Tehran: both light states move, all weather studies retain the city, and motion can stop",
+    "Tabriz: both light states move, all weather studies retain the city, and motion can stop",
+    "Mashhad: both light states move, all weather studies retain the city, and motion can stop",
+    "Bandar Abbas: both light states move, all weather studies retain the city, and motion can stop",
+    "Studio city studies leave the selected weather record and temperature intact",
+    "all six Studio cities fit a 320px viewport and obey system reduced motion"
+  ]
+}

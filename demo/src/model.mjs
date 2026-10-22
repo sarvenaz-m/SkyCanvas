@@ -27,6 +27,20 @@ export const places = [
     longitude: 46.2919,
     zone: "Asia/Tehran",
   },
+  {
+    id: "mashhad",
+    name: "Mashhad",
+    latitude: 36.2605,
+    longitude: 59.6168,
+    zone: "Asia/Tehran",
+  },
+  {
+    id: "bandar-abbas",
+    name: "Bandar Abbas",
+    latitude: 27.1832,
+    longitude: 56.2666,
+    zone: "Asia/Tehran",
+  },
 ];
 export const scenes = ["clear", "cloud", "fog", "rain", "snow", "storm"];
 export function condition(code) {

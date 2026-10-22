@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="268" height="68" viewBox="0 0 268 68" role="img" aria-label="Open the SkyCanvas live demo">
+  <defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#244e71"/><stop offset="1" stop-color="#16334e"/></linearGradient></defs>
+  <rect x="1" y="1" width="266" height="66" rx="15" fill="url(#b)" stroke="#567792"/>
+  <circle cx="34" cy="34" r="17" fill="#f2d7a2"/>
+  <path d="M30 26l12 8-12 8Z" fill="#193754"/>
+  <text x="64" y="30" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">Open Live Demo</text>
+  <text x="64" y="48" fill="#c9dce9" font-family="Arial,sans-serif" font-size="11">Six cities. Day and night.</text>
+  <path d="M234 34h12m-5-5 5 5-5 5" fill="none" stroke="#f2d7a2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

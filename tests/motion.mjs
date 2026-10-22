@@ -90,7 +90,7 @@ try {
   );
   assert.equal(
     await svg.getAttribute("aria-label"),
-    "Illustrated clear landscape, night. Decorative scene.",
+    "Illustrated Isfahan clear landscape, night. Bridges of Isfahan. Decorative scene.",
   );
   pass("night stars twinkle while the scene retains a descriptive label");
   await page.getByRole("checkbox", { name: "Gentle motion" }).uncheck();
@@ -135,7 +135,7 @@ try {
     path.join(root, "docs/verification/motion-tests.json"),
     JSON.stringify(
       {
-        version: "1.0.0",
+        version: "2.0.0",
         executedAt: new Date().toISOString(),
         browser: await browser.version(),
         checkCount: checks.length,
